@@ -1,7 +1,6 @@
 package ejerciciostp4.FabricaDeMuebles.Condiciones;
 
-import ejerciciostp4.FabricaDeMuebles.Condiciones.Criterio;
-import ejerciciostp4.FabricaDeMuebles.PedidoDeMueble;
+import ejerciciostp4.FabricaDeMuebles.ClasesPrincipales.PedidoDeMueble;
 
 public class CriterioPorMasCaro implements Criterio {
     int precio;

@@ -1,6 +1,6 @@
 package ejerciciostp4.FabricaDeMuebles.Comparadores;
 
-import ejerciciostp4.FabricaDeMuebles.PedidoDeMueble;
+import ejerciciostp4.FabricaDeMuebles.ClasesPrincipales.PedidoDeMueble;
 
 public class ComparadorPorPrecio extends ComparadorMueble {
     public ComparadorPorPrecio(){sig=null;}

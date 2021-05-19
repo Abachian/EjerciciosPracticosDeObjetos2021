@@ -1,4 +1,4 @@
-package ejerciciostp4.FabricaDeMuebles;
+package ejerciciostp4.FabricaDeMuebles.ClasesPrincipales;
 
 import ejerciciostp4.FabricaDeMuebles.Comparadores.ComparadorMueble;
 import ejerciciostp4.FabricaDeMuebles.Condiciones.Criterio;
@@ -34,7 +34,7 @@ public class Fabrica {
         if(!pedidosAEspera.contains(p))
             pedidosAEspera.add(p);
     }
-    public List<PedidoDeMueble>cumple(Criterio c, ComparadorMueble m)
+    public List<PedidoDeMueble>PedidosOrdenados(Criterio c, ComparadorMueble m)
     {
         List<PedidoDeMueble> resultado= new ArrayList<PedidoDeMueble>();
         for (int i=0; i<=pedidosARealizar.size();i++){
@@ -42,10 +42,7 @@ public class Fabrica {
             resultado.addAll(muebleActual.cumple(c));
         }
         Collections.sort(resultado,m);
+        return resultado;
     }
-    public void addPedidosARealizar(PedidoDeMueble p)
-    {
-        if(!pedidosARealizar.contains(p))
 
-    }
 }

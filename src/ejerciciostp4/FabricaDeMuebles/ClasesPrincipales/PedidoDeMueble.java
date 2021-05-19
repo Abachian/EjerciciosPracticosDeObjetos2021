@@ -1,16 +1,16 @@
-package ejerciciostp4.FabricaDeMuebles;
+package ejerciciostp4.FabricaDeMuebles.ClasesPrincipales;
 
 import ejerciciostp4.FabricaDeMuebles.Condiciones.Criterio;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class PedidoDeMueble implements Criterio {
+public class PedidoDeMueble{
     private String mueble;
     private int costoEstimado;
     private String material;
-    private long fechaDePedido;
-    private long fechaMaximaEntrega;
+    private int fechaDePedido;
+    private int fechaMaximaEntrega;
     private String lugarDeEntrega;
 
     public String getMueble() {
@@ -37,19 +37,19 @@ public class PedidoDeMueble implements Criterio {
         this.material = material;
     }
 
-    public long getFechaDePedido() {
+    public int getFechaDePedido() {
         return fechaDePedido;
     }
 
-    public void setFechaDePedido(long fechaDePedido) {
+    public void setFechaDePedido(int fechaDePedido) {
         this.fechaDePedido = fechaDePedido;
     }
 
-    public long getFechaMaximaEntrega() {
+    public int getFechaMaximaEntrega() {
         return fechaMaximaEntrega;
     }
 
-    public void setFechaMaximaEntrega(long fechaMaximaEntrega) {
+    public void setFechaMaximaEntrega(int fechaMaximaEntrega) {
         this.fechaMaximaEntrega = fechaMaximaEntrega;
     }
 
@@ -60,8 +60,8 @@ public class PedidoDeMueble implements Criterio {
     public void setLugarDeEntrega(String lugarDeEntrega) {
         this.lugarDeEntrega = lugarDeEntrega;
     }
-    public PedidoDeMueble(String mueble, int costoEstimado, String material, long fechaDePedido,
-                          long fechaMaximaEntrega, String lugarDeEntrega)
+    public PedidoDeMueble(String mueble, int costoEstimado, String material, int fechaDePedido,
+                          int fechaMaximaEntrega, String lugarDeEntrega)
     {
         this.mueble=mueble;
         this.costoEstimado=costoEstimado;
@@ -69,15 +69,6 @@ public class PedidoDeMueble implements Criterio {
         this.fechaDePedido=fechaDePedido;
         this.fechaMaximaEntrega=fechaMaximaEntrega;
         this.lugarDeEntrega=lugarDeEntrega;
-    }
-    public boolean equals(Object o1)
-    {
-        try {
-            PedidoDeMueble p= (PedidoDeMueble) o1;
-            return (this.mueble.equals(p.getMueble()) && (this.lugarDeEntrega.equals(p.getLugarDeEntrega()))
-        } catch (Exception e) {
-            return false;
-        }
     }
     public List<PedidoDeMueble> cumple(Criterio c)
     {

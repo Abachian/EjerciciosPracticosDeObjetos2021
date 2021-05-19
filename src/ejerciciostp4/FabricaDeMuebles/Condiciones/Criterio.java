@@ -1,8 +1,6 @@
 package ejerciciostp4.FabricaDeMuebles.Condiciones;
 
-import ejerciciostp4.FabricaDeMuebles.PedidoDeMueble;
-
-import java.util.Comparator;
+import ejerciciostp4.FabricaDeMuebles.ClasesPrincipales.PedidoDeMueble;
 
 public interface Criterio  {
 

@@ -17,7 +17,7 @@ public class Cliente {
         return cuentas;
     }
 
-    public void setCuentas(List<CajaAhorro> cuentas) {
+    public  void setCuentas(List<CajaAhorro> cuentas) {
         this.cuentas=cuentas;
     }
     public double getSaldo(int numerocuenta)

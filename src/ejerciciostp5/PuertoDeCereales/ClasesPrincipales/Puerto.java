@@ -9,6 +9,7 @@ import ejerciciostp5.PuertoDeCereales.Ordenadores.OrdenadorCamion;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 
 public class Puerto {
@@ -20,6 +21,14 @@ public class Puerto {
 
     public OrdenadorCamion getOrdC() {
         return ordC;
+    }
+
+    public OrdenadorBarco getOrdB() {
+        return ordB;
+    }
+
+    public void setOrdB(OrdenadorBarco ordB) {
+        this.ordB = ordB;
     }
 
     public void setOrdC(OrdenadorCamion ordC) {
@@ -55,7 +64,7 @@ public class Puerto {
         for (int i=0; i<camiones.size();i++){
             resultado.add(camiones.get(i));
         }
-        Collections.sort(resultado,this.ordC);
+        Collections.sort(resultado,this.getOrdC());
         return resultado;
     }
     public List<Barco>ListadoBarco()
@@ -64,7 +73,7 @@ public class Puerto {
         for (int i=0; i<barcos.size();i++){
             resultado.add(barcos.get(i));
         }
-        Collections.sort(resultado,this.ordB);
+        Collections.sort(resultado,this.getOrdB());
         return resultado;
     }
     public void imprimirC(List<Camion> cs) {
@@ -86,4 +95,5 @@ public class Puerto {
                 ", ordC=" + ordC +
                 '}';
     }
+
 }

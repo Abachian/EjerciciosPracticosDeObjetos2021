@@ -142,6 +142,8 @@ public class Persona {
     }
     public static void main (String args[])
     {
-
+        String A="aac";
+        String B="aab";
+        System.out.println(A.compareTo(B));
     }
 }

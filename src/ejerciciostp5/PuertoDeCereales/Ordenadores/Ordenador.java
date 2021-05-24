@@ -9,7 +9,7 @@ public abstract class Ordenador implements Comparator<Transporte> {
     public int compare (Transporte t1, Transporte t2)
     {
         int resultado= this.compararTransporte(t1,t2);
-        if ((resultado==0) && (sig!=null)) // si da 0 significa que los muebles son iguales
+        if ((resultado==0) && (sig!=null)) // si da 0 significa que los Transportes son iguales
             return sig.compare(t1,t2);
         return resultado;
     }

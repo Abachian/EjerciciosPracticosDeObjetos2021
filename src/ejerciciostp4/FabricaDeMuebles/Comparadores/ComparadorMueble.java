@@ -6,6 +6,11 @@ import java.util.Comparator;
 
 public abstract class ComparadorMueble implements Comparator<PedidoDeMueble> {
     ComparadorMueble sig;
+
+    public ComparadorMueble(ComparadorMueble sig) {
+        this.sig = sig;
+    }
+
     public int compare (PedidoDeMueble p1, PedidoDeMueble p2)
     {
         int resultado= this.compararMuebles(p1,p2);

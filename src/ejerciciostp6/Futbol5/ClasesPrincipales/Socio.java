@@ -3,6 +3,7 @@ package ejerciciostp6.Futbol5.ClasesPrincipales;
 import java.util.ArrayList;
 import java.util.List;
 import ejerciciostp6.Futbol5.FiltrosDeSocio.FiltroSocio;
+import ejerciciostp6.Futbol5.ClasesPrincipales.Cancha;
 public class Socio {
     private String nombre;
     private String apellido;

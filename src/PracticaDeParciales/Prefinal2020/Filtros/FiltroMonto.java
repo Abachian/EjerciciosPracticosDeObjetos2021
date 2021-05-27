@@ -1,6 +1,6 @@
-package PracticaDeParciales.Recuperatorio2020.Filtros;
+package PracticaDeParciales.Prefinal2020.Filtros;
 
-import PracticaDeParciales.Recuperatorio2020.ClasePrincipales.Seguro;
+import PracticaDeParciales.Prefinal2020.ClasePrincipales.Seguro;
 
 public class FiltroMonto implements Filtro {
     private float montoBuscado;

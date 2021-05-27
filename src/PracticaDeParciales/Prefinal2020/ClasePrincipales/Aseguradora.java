@@ -1,7 +1,7 @@
-package PracticaDeParciales.Recuperatorio2020.ClasePrincipales;
+package PracticaDeParciales.Prefinal2020.ClasePrincipales;
 
-import PracticaDeParciales.Recuperatorio2020.Filtros.Filtro;
-import PracticaDeParciales.Recuperatorio2020.Filtros.FiltroPorPalabra;
+import PracticaDeParciales.Prefinal2020.Filtros.Filtro;
+import PracticaDeParciales.Prefinal2020.Filtros.FiltroPorPalabra;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
